@@ -1,0 +1,56 @@
+.beeGuessDisplay {
+    border: none;
+    outline: none;
+    width: 30vw;
+    min-width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 40vh;
+}
+
+.beeLoadDiv {
+    font-size: 0.8rem;
+    color: rgba(0, 0, 0, 0.3);
+    margin-top: 1vh;
+}
+
+.beeGuessInput {
+    border: none;
+    outline: none;
+    width: 20vw;
+    min-width: 240px;
+    padding: 1vh;
+    margin: 2vh 0vh;
+    background-color: gold;
+    text-align: center;
+    font-size: larger;
+    caret-color: transparent;
+    cursor: default;
+}
+
+.beeSubmitButton, .beeSubmitButtonDisabled {
+    border: none;
+    background-color: gold;
+    border-radius: 100%;
+    font-size: 1rem;
+    outline: none;
+    width: 4vw;
+    height: 4vw;
+}
+
+.beeSubmitButton:hover, .beeSubmitButtonDisabled:hover {
+    background-color: gold;
+}
+
+.beeSubmitButtonDisabled, .beeSubmitButtonDisabled:hover {
+    background-color: whitesmoke;
+}
+
+.beeGuessHelp {
+    font-size: 0.8rem;
+    color: rgba(0, 0, 0, 0.3);
+    height: 2vh;
+    min-height: 20px;
+    margin-bottom: 10px;
+}
