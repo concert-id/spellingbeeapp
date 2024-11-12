@@ -23,15 +23,37 @@ function CallNotes() {
   const extraNotes = useAppSelector(selectExtraNotes);
   const pastNotes = useAppSelector(selectPastCallNotes);
 
+  const setPolicyID = (id: string) => {
+    dispatch(setPolicyIDAction(id));
+  };
+
   function CallNotesForm() {
     return (
       <>
         <div>
           <form>
-            <div></div>
+            <div>
+              <label htmlFor="Policy Number">Policy Number</label>
+            </div>
+            <div>
+              <input
+                type="text"
+                name="Policy Number"
+                value={policyID}
+                onInput={(e) => setPolicyID(e.currentTarget.value)}
+              ></input>
+            </div>
           </form>
         </div>
       </>
     );
   }
+
+  return (
+    <>
+    <CallNotesForm />
+    <p>---</p>
+    <div>{policyID}</div>
+    </>
+  )
 }
