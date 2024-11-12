@@ -1,12 +1,11 @@
-import "./App.css"
-import { SpellingBee } from "./features/words/Pangram"
+import { CallNotes } from "./features/callnotes/callNotes"
+import "./index.css"
 
 const App = () => {
   return (
     <div className="App">
-      <header className="App-header">
-        <SpellingBee/>
-      </header>
+      <header>Notes</header>
+      <div className="callNotes"><CallNotes /></div>
     </div>
   )
 }
